@@ -4,7 +4,7 @@
 
 1. **Configuration du dépôt GitHub**
 
-    _( voir fichier **01_Terminal_CommandesGit.jpg** )_
+    _( voir fichier **01_Terminal_CommandesGit.jpg** dans le dossier Steps)_
 
    Créez un dépôt GitHub avec la structure proposée :
     _(Git doit être installé localement)_
