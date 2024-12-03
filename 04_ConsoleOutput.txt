@@ -1,0 +1,49 @@
+Started by user David Savard
+Obtained Jenkinsfile from git https://github.com/daprogCo/IntraD30.git
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in /var/jenkins_home/workspace/IntraD30
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Declarative: Checkout SCM)
+[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/IntraD30/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/daprogCo/IntraD30.git # timeout=10
+Fetching upstream changes from https://github.com/daprogCo/IntraD30.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5'
+ > git fetch --tags --force --progress -- https://github.com/daprogCo/IntraD30.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 242efb948d5d3a91af3b34a40588b980d2fe5c99 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 242efb948d5d3a91af3b34a40588b980d2fe5c99 # timeout=10
+Commit message: "Modified Jenkinsfile edited"
+ > git rev-list --no-walk 242efb948d5d3a91af3b34a40588b980d2fe5c99 # timeout=10
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Run Script)
+[Pipeline] sh
++ javac HelloWorld.java
++ java HelloWorld
+Hello, World from Jenkins Pipeline! [Java]
+[Pipeline] sh
++ echo Hello World
+Hello World
+[Pipeline] sh
++ python3 hello_world.py
+Hello, World from Jenkins Pipeline! [Python]
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
