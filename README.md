@@ -3,6 +3,8 @@
 ## Instructions - Créer un Pipeline Jenkins
 
 1. **Configuration du dépôt GitHub**
+   ![alt text](https://github.com/daprogCo/Intra30/blob/master/Steps/01_Terminal_CommandesGit.jpg?raw=true)
+
    _( voir fichier **01_Terminal_CommandesGit.jpg** )_
 
    Créez un dépôt GitHub avec la structure proposée :
@@ -36,13 +38,13 @@
      print("Hello, World from Jenkins Pipeline! [Python]")
      ```
 
-2. **Capture d'écran du dépôt GitHub**
+3. **Capture d'écran du dépôt GitHub**
    _(voir fichier **02_RepoGitHub.jpg** dans le dossier Steps)_
    
-3. **Environnement d'exécution**
+4. **Environnement d'exécution**
    _(voir fichier **03_ContainerJenkins.jpg** et **03_InstallPython3.txt** dans le dossier Steps)_
 
-4. **Création du Jenkinsfile**
+5. **Création du Jenkinsfile**
    ```groovy
    pipeline {
        agent any
