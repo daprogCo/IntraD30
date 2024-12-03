@@ -1,32 +1,24 @@
-# Partie 2 : (80% de la note finale)
-
-## Objectif : Automatisation d'un Pipeline Jenkins avec GitHub 
-
-**Automatiser l'exécution de scripts "Hello World" en Java et Python grâce à un pipeline Jenkins déclenché automatiquement à chaque modification dans le dépôt GitHub.**
-
-## Prérequis
-
-**Assurez-vous d'avoir :**
-
-- Git installé sur votre machine.
-- Un compte GitHub fonctionnel.
-- Un serveur Jenkins configuré avec le plugin GitHub.
+# Intra D30 David Savard
 
 ## Instructions - Créer un Pipeline Jenkins
 
 1. **Configuration du dépôt GitHub**
 
-   Créez un dépôt GitHub avec la structure suivante :
+   Créez un dépôt GitHub avec la structure proposée :
 
-   ```
-   📦 MonProjetJenkins
-   ├── Jenkinsfile             # Pipeline Jenkins
-   ├── HelloWorld.java         # Script Java
-   ├── hello_world.py          # Script Python
-   └── README.md               # Documentation du projet
+   ```bash
+   mkdir IntraD30
+   cd IntraD30
+   touch HelloWorld.java hello_world.py Jenkinsfile README.md
+   git init
+   git add .
+   git commit -m "Initial Commit"
+   git remote add origin https://github.com/<your-account>/<your-repo>.git
+   git branch -M master
+   git push -u origin master
    ```
 
-   Ajoutez les scripts suivants :
+   Ajout les scripts suivants :
 
    - **HelloWorld.java :**
      ```java
@@ -45,7 +37,7 @@
 2. **Capture d'écran du dépôt GitHub**
 
    # 📌 **⬜ Votre imprime-écran ici (10 points) :** 
-   _(Insérez une capture d'écran de votre dépôt GitHub avec les fichiers mentionnés ci-dessus.)_
+  
 
 3. **Environnement d'exécution**
 
@@ -112,21 +104,3 @@ Dans cette section, on configure d'abord le déclenchement automatique, puis on 
 
     # 📌 **⬜ Votre réponse ici (10 points) :**  
     _(Si vous avez utilisé Blue Ocean, décrivez en détail la configuration effectuée pour atteindre les objectifs de l'exercice. Sinon, laissez cette section vide.)_
-
-## Grille d'évaluation
-
-| **Question** | **Description**                                                                                           | **Points** |
-|--------------|-----------------------------------------------------------------------------------------------------------|------------|
-| 1            | Capture d'écran du dépôt GitHub                                                                           | 10         |
-| 2            | Description de l'environnement d'exécution                                                                | 10         |
-| 3            | Création du Jenkinsfile                                                                                   | 10         |
-| 4            | Vérification des sorties dans la console                                                                  | 10         |
-| 5            | Test du déclenchement automatique                                                                         | 10         |
-| 6            | Configuration du déclenchement automatique                                                                | 10         |
-| 7            | Variables d'environnement                                                                                 | 10         |
-| 8            | Configuration du Webhook GitHub                                                                           | 10         |
-| 9            | Test du Webhook                                                                                           | 10         |
-| 10           | Méthodes de déclenchement d'un pipeline Jenkins                                                           | 10         |
-| 11           | Utilisation de Blue Ocean (Optionnel)                                                                     | 10         |
-
-**Total :** 100 points (110 points avec l'option Blue Ocean)
