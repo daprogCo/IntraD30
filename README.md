@@ -45,7 +45,9 @@
 
    _(voir fichier **03_ContainerJenkins.jpg** et **03_InstallPython3.txt** dans le dossier Steps)_
 
-4. **Création du Jenkinsfile**
+   J'ai utilisé un container Docker contenant Jenkins car c'est la facon moderne et la plus versatile pour déployer toute application.
+
+5. **Création du Jenkinsfile**
    ```groovy
    pipeline {
        agent any
@@ -61,17 +63,17 @@
    }
    ```
 
-5. **Vérification des sorties dans la console**
+6. **Vérification des sorties dans la console**
 
    _(voir fichier **05_ConsoleOutput.txt** dans le dossier Steps)_
 
-6. **Configuration et test du déclenchement automatique**
+7. **Configuration et test du déclenchement automatique**
 
     _(voir fichier **06_CronJob.jpg** et **06_ConsoleOutput.txt** dans le dossier Steps)_
 
    Il suffit de sélectionner l'option **Build periodically** sous les choix **Build Trigger** et de parametrer la schédule avec le format CRON * * * * * représentant chaque minute, heure, jour, mois et tout les jours de la semaine.
 
-7. **Variables d'environnement**
+8. **Variables d'environnement**
     
     _(voir fichier **07_ConsoleOutput.txt** dans le dossier Steps)_
 
@@ -79,22 +81,16 @@
    Certaines peuvent même être défini dans le Jenkinsfile.
    Celles-ci peuvent être appelé par la suite sous cette nomenclature ex.${WORKSPACE} 
 
-8. **Configuration du Webhook GitHub**
+9. **Configuration du Webhook GitHub**
 
-   # 📌 **⬜ Votre réponse ici (10 points) :**  
-   _(Détaillez les étapes pour configurer un webhook GitHub, y compris l'URL et l'activation de l'événement push.)_
+    _(voir fichier **08_JenkinsTrigger.jpg** et **08_Webhook.jpg** dans le dossier Steps)_
 
-11. **Test du Webhook**
+10. **Test du Webhook**
 
-   # 📌 **⬜ Votre imprime-écran ici (10 points) :**  
-   _(Insérez une capture d'écran ou des logs du pipeline en cours d'exécution suite à une modification du README.md pour démontrer le bon fonctionnement du webhook.)_
+    _(voir fichier **09_TestWebhook.jpg** dans le dossier Steps)_
 
 11. **Méthodes de déclenchement d'un pipeline Jenkins**
 
-    # 📌 **⬜ Votre réponse ici (10 points) :**  
-    _(Expliquez les différentes méthodes de déclenchement d'un pipeline Jenkins suite à un push sur un dépôt Git, en comparant leurs avantages et inconvénients.)_
-
-12. **Utilisation de Blue Ocean (Optionnel)**
-
-    # 📌 **⬜ Votre réponse ici (10 points) :**  
-    _(Si vous avez utilisé Blue Ocean, décrivez en détail la configuration effectuée pour atteindre les objectifs de l'exercice. Sinon, laissez cette section vide.)_
+    Il y a deux façons que nous avons explorer pour déclencher une pipeline Jenkins.
+    1. Automatisation via un récurrence CRON qui assure que la pipeline déploie l'application à intervalle régulier sans la complexité impliqué par la configuration d'un webhook.
+    2. Un webhook permet à la pipeline d'être déclenché seulement lorsqu'un changement est appliqué au répositoire et garantie que la solution déployé est toujours à jours.
