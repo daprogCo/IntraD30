@@ -61,13 +61,7 @@
 5. **Vérification des sorties dans la console**
    _(voir fichier **05_ConsoleOutput.jpg** dans le dossier Steps)_
 
-   # 📌 **⬜ Votre imprime-écran ici (10 points) :** 
-   _(Insérez une capture d'écran montrant l'exécution des deux scripts (Java et Python) dans la console Jenkins suite à une exécution manuelle.)_
-
-
-
-
-8. **Configuration et test du déclenchement automatique**
+6. **Configuration et test du déclenchement automatique**
 
 Dans cette section, on configure d'abord le déclenchement automatique, puis on le teste en effectuant une modification.
 
