@@ -35,23 +35,20 @@
      ```python
      print("Hello, World from Jenkins Pipeline! [Python]")
      ```
-2.
-3. **Capture d'écran du dépôt GitHub**
 
-   # 📌 **⬜ Votre imprime-écran ici (10 points) :** 
-  
-
-4. **Environnement d'exécution**
+2. **Capture d'écran du dépôt GitHub**
+   voir fichier 02_RepoGitHub.jpg dans le dossier Steps 
+5. **Environnement d'exécution**
 
    # 📌 **⬜ Votre réponse ici (10 points) :**  
    _(Indiquez votre environnement d'exécution (Windows, Linux, ou Docker) et justifiez brièvement votre choix.)_
 
-5. **Création du Jenkinsfile**
+6. **Création du Jenkinsfile**
 
    # 📌 **⬜ Votre réponse ici (10 points) :**  
    _(Écrivez votre Jenkinsfile complet ici. Assurez-vous qu'il exécute les deux scripts et se déclenche à chaque modification des fichiers spécifiés.)_
 
-6. **Vérification des sorties dans la console**
+7. **Vérification des sorties dans la console**
 
    # 📌 **⬜ Votre imprime-écran ici (10 points) :** 
    _(Insérez une capture d'écran montrant l'exécution des deux scripts (Java et Python) dans la console Jenkins suite à une exécution manuelle.)_
@@ -59,7 +56,7 @@
 
 
 
-7. **Configuration et test du déclenchement automatique**
+8. **Configuration et test du déclenchement automatique**
 
 Dans cette section, on configure d'abord le déclenchement automatique, puis on le teste en effectuant une modification.
 
