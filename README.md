@@ -71,10 +71,12 @@
 
    Il suffit de sélectionner l'option **Build periodically** sous les choix **Build Trigger** et de parametrer la schédule avec le format CRON * * * * * représentant chaque minute, heure, jour, mois et tout les jours de la semaine.
 
-8. **Variables d'environnement**
+7. **Variables d'environnement**
+   Plusieurs variables sont disponibles par défaut tel WORKSPACE, JOB_NAME ou BUILD_NUMBER.
+   Certaines peuvent même être défini dans le Jenkinsfile.
+   Celles-ci peuvent être appelé par la suite sous cette nomenclature ex.${WORKSPACE} 
 
-   # 📌 **⬜ Votre réponse ici (10 points) :**  
-   _(Listez toutes les variables d'environnement utilisées, précisez leur rôle et fournissez les chemins correspondants.)_
+
 
 9. **Configuration du Webhook GitHub**
 
