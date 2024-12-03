@@ -43,19 +43,19 @@
    _(voir fichier 03_ContainerJenkins.jpg et 03_InstallPython3.txt dans le dossier Steps)_
 
 4. **Création du Jenkinsfile**
-      ```groovy
-      pipeline {
-    agent any
-    stages {
-        stage('Run Script') {
-            steps {
-                sh 'javac HelloWorld.java && java HelloWorld'
-                sh 'echo "Hello World"'
-                sh 'python3 hello_world.py'
-            }
-        }
-    }
-}
+   ```groovy
+         pipeline {
+       agent any
+       stages {
+           stage('Run Script') {
+               steps {
+                   sh 'javac HelloWorld.java && java HelloWorld'
+                   sh 'echo "Hello World"'
+                   sh 'python3 hello_world.py'
+               }
+           }
+       }
+   }
    ```
 
 7. **Vérification des sorties dans la console**
