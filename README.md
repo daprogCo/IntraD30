@@ -5,6 +5,7 @@
 1. **Configuration du dépôt GitHub**
 
    Créez un dépôt GitHub avec la structure proposée :
+   
    (Git doit être installé localement)
 
    ```bash
