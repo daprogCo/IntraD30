@@ -63,52 +63,35 @@
 
 5. **Vérification des sorties dans la console**
 
-   _(voir fichier **05_ConsoleOutput.jpg** dans le dossier Steps)_
+   _(voir fichier **05_ConsoleOutput.txt** dans le dossier Steps)_
 
 6. **Configuration et test du déclenchement automatique**
 
-Dans cette section, on configure d'abord le déclenchement automatique, puis on le teste en effectuant une modification.
+    _(voir fichier **06_CronJob.jpg** et **06_ConsoleOutput.txt** dans le dossier Steps)_
 
-   6.1. **Configuration du déclenchement automatique**
+   Il suffit de sélectionner l'option **Build periodically** sous les choix **Build Trigger** et de parametrer la schédule avec le format CRON * * * * * représentant chaque minute, heure, jour, mois et tout les jours de la semaine.
 
-   # 📌 **⬜ Votre réponse ici (10 points) :**  
-   _(Expliquez en détail les étapes de configuration pour permettre le déclenchement automatique du pipeline suite à un push. Quesque nous devons changer ? )_
-
-   6.2. **Test du déclenchement automatique**
-   
-   Modifiez le fichier `hello_world.py` comme suit :
-   ```python
-   print("Hello, World from Jenkins Pipeline! [Python]. This is <VOTRE NOM COMPLET ICI>")
-   ```
-
-   # 📌 **⬜ Votre imprime-écran ici (10 points) :**  
-   _(Insérez une capture d'écran montrant l'exécution automatique du pipeline suite au push de cette modification.)_
-
-
-
-
-
-7. **Variables d'environnement**
+8. **Variables d'environnement**
 
    # 📌 **⬜ Votre réponse ici (10 points) :**  
    _(Listez toutes les variables d'environnement utilisées, précisez leur rôle et fournissez les chemins correspondants.)_
 
-8. **Configuration du Webhook GitHub**
+9. **Configuration du Webhook GitHub**
 
    # 📌 **⬜ Votre réponse ici (10 points) :**  
    _(Détaillez les étapes pour configurer un webhook GitHub, y compris l'URL et l'activation de l'événement push.)_
 
-9. **Test du Webhook**
+10. **Test du Webhook**
 
    # 📌 **⬜ Votre imprime-écran ici (10 points) :**  
    _(Insérez une capture d'écran ou des logs du pipeline en cours d'exécution suite à une modification du README.md pour démontrer le bon fonctionnement du webhook.)_
 
-10. **Méthodes de déclenchement d'un pipeline Jenkins**
+11. **Méthodes de déclenchement d'un pipeline Jenkins**
 
     # 📌 **⬜ Votre réponse ici (10 points) :**  
     _(Expliquez les différentes méthodes de déclenchement d'un pipeline Jenkins suite à un push sur un dépôt Git, en comparant leurs avantages et inconvénients.)_
 
-11. **Utilisation de Blue Ocean (Optionnel)**
+12. **Utilisation de Blue Ocean (Optionnel)**
 
     # 📌 **⬜ Votre réponse ici (10 points) :**  
     _(Si vous avez utilisé Blue Ocean, décrivez en détail la configuration effectuée pour atteindre les objectifs de l'exercice. Sinon, laissez cette section vide.)_
