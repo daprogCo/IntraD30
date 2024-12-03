@@ -37,7 +37,8 @@
      ```
 
 2. **Capture d'écran du dépôt GitHub**
-   voir fichier 02_RepoGitHub.jpg dans le dossier Steps 
+   #voir fichier 02_RepoGitHub.jpg dans le dossier Steps
+   
 5. **Environnement d'exécution**
 
    # 📌 **⬜ Votre réponse ici (10 points) :**  
