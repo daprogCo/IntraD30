@@ -3,7 +3,7 @@
 ## Instructions - Créer un Pipeline Jenkins
 
 1. **Configuration du dépôt GitHub**
-   _(voir fichier 01_Terminal_CommandesGit.jpg)_
+   _(voir fichier_ 01_Terminal_CommandesGit.jpg_)_
 
    Créez un dépôt GitHub avec la structure proposée :
     _(Git doit être installé localement)_
