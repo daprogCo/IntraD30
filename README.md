@@ -5,7 +5,7 @@
 1. **Configuration du dépôt GitHub**
 
    Créez un dépôt GitHub avec la structure proposée :
-   ### * git doit être installé localememt
+   ===> Git doit être installé localememt <===
 
    ```bash
    mkdir IntraD30
