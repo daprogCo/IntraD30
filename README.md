@@ -72,18 +72,19 @@
    Il suffit de sélectionner l'option **Build periodically** sous les choix **Build Trigger** et de parametrer la schédule avec le format CRON * * * * * représentant chaque minute, heure, jour, mois et tout les jours de la semaine.
 
 7. **Variables d'environnement**
+    
+    _(voir fichier **07_ConsoleOutput.txt** dans le dossier Steps)_
+
    Plusieurs variables sont disponibles par défaut tel WORKSPACE, JOB_NAME ou BUILD_NUMBER.
    Certaines peuvent même être défini dans le Jenkinsfile.
    Celles-ci peuvent être appelé par la suite sous cette nomenclature ex.${WORKSPACE} 
 
-
-
-9. **Configuration du Webhook GitHub**
+8. **Configuration du Webhook GitHub**
 
    # 📌 **⬜ Votre réponse ici (10 points) :**  
    _(Détaillez les étapes pour configurer un webhook GitHub, y compris l'URL et l'activation de l'événement push.)_
 
-10. **Test du Webhook**
+11. **Test du Webhook**
 
    # 📌 **⬜ Votre imprime-écran ici (10 points) :**  
    _(Insérez une capture d'écran ou des logs du pipeline en cours d'exécution suite à une modification du README.md pour démontrer le bon fonctionnement du webhook.)_
