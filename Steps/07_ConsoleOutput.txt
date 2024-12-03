@@ -1,0 +1,62 @@
+Started by timer
+Obtained Jenkinsfile from git https://github.com/daprogCo/IntraD30.git
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in /var/jenkins_home/workspace/IntraD30
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Declarative: Checkout SCM)
+[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/IntraD30/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/daprogCo/IntraD30.git # timeout=10
+Fetching upstream changes from https://github.com/daprogCo/IntraD30.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5'
+ > git fetch --tags --force --progress -- https://github.com/daprogCo/IntraD30.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision c2e69f4df8887023944a06ee2843a49653a33ad4 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c2e69f4df8887023944a06ee2843a49653a33ad4 # timeout=10
+Commit message: "Merge branch 'master' of https://github.com/daprogCo/IntraD30"
+ > git rev-list --no-walk 4c4e5857fce7be349356ac93018856ed6ee1a553 # timeout=10
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Run Script)
+[Pipeline] sh
++ javac HelloWorld.java
++ java HelloWorld
+Hello, World from Jenkins Pipeline! [Java]
+[Pipeline] sh
++ echo Le nom du job est IntraD30
+Le nom du job est IntraD30
+[Pipeline] sh
++ echo Le numéro du build est 41
+Le numéro du build est 41
+[Pipeline] sh
++ echo Le chemin complet vers le répertoire est /var/jenkins_home/workspace/IntraD30
+Le chemin complet vers le répertoire est /var/jenkins_home/workspace/IntraD30
+[Pipeline] sh
++ echo Mon nom est: Dave the Dev
+Mon nom est: Dave the Dev
+[Pipeline] sh
++ python3 hello_world.py
+Hello, World from Jenkins Pipeline! [Python] David Savard
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
