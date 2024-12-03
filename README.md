@@ -3,8 +3,6 @@
 ## Instructions - Créer un Pipeline Jenkins
 
 1. **Configuration du dépôt GitHub**
-   ![alt text](https://github.com/daprogCo/Intra30/blob/master/01_Terminal_CommandesGit.jpg?raw=true)
-
    _( voir fichier **01_Terminal_CommandesGit.jpg** )_
 
    Créez un dépôt GitHub avec la structure proposée :
