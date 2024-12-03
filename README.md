@@ -79,17 +79,38 @@
 
    Plusieurs variables sont disponibles par défaut tel WORKSPACE, JOB_NAME ou BUILD_NUMBER.
    Certaines peuvent même être défini dans le Jenkinsfile.
-   Celles-ci peuvent être appelé par la suite sous cette nomenclature ex.${WORKSPACE} 
+   Celles-ci peuvent être appelé par la suite sous cette nomenclature ex.${WORKSPACE}
 
-9. **Configuration du Webhook GitHub**
+      ```groovy
+      pipeline {
+        agent any
+        environment {
+            MY_NAME = 'Dave the Dev'
+        }
+        stages {
+            stage('Run Script') {
+                steps {
+                    sh 'javac HelloWorld.java && java HelloWorld'
+                    sh 'echo "Le nom du job est ${JOB_NAME}"'
+                    sh 'echo "Le numéro du build est ${BUILD_NUMBER}"'
+                    sh 'echo "Le chemin complet vers le répertoire est ${WORKSPACE}"'
+                    sh 'echo "Mon nom est: ${MY_NAME}"'
+                    sh 'python3 hello_world.py'
+                }
+            }
+        }
+    }
+   ```
+
+10. **Configuration du Webhook GitHub**
 
     _(voir fichier **08_JenkinsTrigger.jpg** et **08_Webhook.jpg** dans le dossier Steps)_
 
-10. **Test du Webhook**
+11. **Test du Webhook**
 
     _(voir fichier **09_TestWebhook.jpg** dans le dossier Steps)_
 
-11. **Méthodes de déclenchement d'un pipeline Jenkins**
+12. **Méthodes de déclenchement d'un pipeline Jenkins**
 
     Il y a deux façons que nous avons explorer pour déclencher une pipeline Jenkins.
     1. Automatisation via un récurrence CRON qui assure que la pipeline déploie l'application à intervalle régulier sans la complexité impliqué par la configuration d'un webhook.
