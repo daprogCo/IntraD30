@@ -44,7 +44,7 @@
 
 4. **Création du Jenkinsfile**
    ```groovy
-         pipeline {
+   pipeline {
        agent any
        stages {
            stage('Run Script') {
