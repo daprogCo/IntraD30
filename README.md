@@ -35,7 +35,7 @@
      ```python
      print("Hello, World from Jenkins Pipeline! [Python]")
      ```
-
+2.
 3. **Capture d'écran du dépôt GitHub**
 
    # 📌 **⬜ Votre imprime-écran ici (10 points) :** 
