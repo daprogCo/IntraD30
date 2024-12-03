@@ -36,13 +36,13 @@
      print("Hello, World from Jenkins Pipeline! [Python]")
      ```
 
-3. **Capture d'écran du dépôt GitHub**
+2. **Capture d'écran du dépôt GitHub**
    _(voir fichier **02_RepoGitHub.jpg** dans le dossier Steps)_
    
-4. **Environnement d'exécution**
+3. **Environnement d'exécution**
    _(voir fichier **03_ContainerJenkins.jpg** et **03_InstallPython3.txt** dans le dossier Steps)_
 
-5. **Création du Jenkinsfile**
+4. **Création du Jenkinsfile**
    ```groovy
    pipeline {
        agent any
@@ -58,7 +58,8 @@
    }
    ```
 
-7. **Vérification des sorties dans la console**
+5. **Vérification des sorties dans la console**
+   _(voir fichier **05_ConsoleOutput.jpg** dans le dossier Steps)_
 
    # 📌 **⬜ Votre imprime-écran ici (10 points) :** 
    _(Insérez une capture d'écran montrant l'exécution des deux scripts (Java et Python) dans la console Jenkins suite à une exécution manuelle.)_
